@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+  <title>Moulin Rouge 8-Bit Pinball — 4-Act Cabaret Pinball &amp; Chiptune Studio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>🎪 Moulin Rouge 8-Bit Pinball <span class="badge">4-Channel Chiptune • Q16.16</span></h1>
+    <div id="hud-score">Score: 0 / 1500 | Balls: 3</div>
+  </header>
+
+  <main class="cabaret-layout">
+    <section class="cabinet-card">
+      <div id="event-banner" class="ticker">Pull Plunger (Space / Launch) to fire the silver ball into Montmartre!</div>
+      <canvas id="pinball-canvas" width="460" height="560"></canvas>
+
+      <div class="flipper-deck">
+        <button id="btn-left-flipper" class="flip-btn">◀ LEFT FLIPPER (A)</button>
+        <button id="btn-plunger" class="launch-btn">🚀 PLUNGER</button>
+        <button id="btn-right-flipper" class="flip-btn">RIGHT FLIPPER (D) ▶</button>
+      </div>
+    </section>
+
+    <aside class="playbill-card">
+      <div class="playbill-box">
+        <strong id="act-title">Act I: Welcome to the Moulin Rouge (1899 Montmartre)</strong>
+        <div id="act-subtitle" class="subtitle">The Red Windmill spins above Paris as opening-night revelers flood the ballroom.</div>
+        <p id="act-story">A penniless poet steps beneath the glowing crimson sails of the Moulin Rouge. Launch the silver ball up the chandelier lane and strike the Red Windmill bumpers to reach 1,500 points!</p>
+      </div>
+
+      <h3>8-Bit Cabaret Jukebox</h3>
+      <div id="track-label" class="track-pill">Track 1: Montmartre Can-Can Gallop (148 BPM)</div>
+      <div class="audio-row">
+        <button id="btn-audio">Sound: Muted</button>
+        <button id="btn-track">⏭️ Next 8-Bit Remix</button>
+      </div>
+
+      <h3>Playbill Receipt (SHA-256)</h3>
+      <button id="btn-receipt">Mint Playbill Receipt</button>
+      <textarea id="receipt-output" rows="6" readonly placeholder="Tap to generate SHA-256 Playbill receipt..."></textarea>
+    </aside>
+  </main>
+
+  <script type="module" src="src/pinball-app.js"></script>
+</body>
+</html>

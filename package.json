@@ -1,0 +1,10 @@
+{
+  "name": "moulin-rouge-8bit-pinball",
+  "version": "1.0.0",
+  "description": "Moulin Rouge-inspired 4-Act living-canvas pinball adventure with Q16.16 flipper/bumper physics and a 4-channel 8-bit chiptune WebAudio soundtrack.",
+  "type": "module",
+  "scripts": {
+    "test": "node --test test/pinball-kernel.test.mjs"
+  },
+  "license": "MIT"
+}
